@@ -1,4 +1,4 @@
-#This are the sorting Algorithms
+# This are the sorting Algorithms
 
 1. Bubble sort
 2. Selection sort
