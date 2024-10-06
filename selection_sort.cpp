@@ -12,7 +12,8 @@ void selection_sort(vector<int>& a){
                 pos = j;
             }
         }
-        swap(a[i],a[pos]);
+        if(pos != i)
+            swap(a[i],a[pos]);
     }
 }
 

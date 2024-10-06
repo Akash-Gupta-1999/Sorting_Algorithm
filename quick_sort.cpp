@@ -5,15 +5,14 @@ void quick_sort(vector<int>& a,int i,int j){
     if(i>=j)
         return;
     int pivot = a[j];
-    int n = a.size();
-    int ptr = 0;
-    for(int k=0;k<n-1;k++){
+    int ptr = i;
+    for(int k=i;k<j;k++){
         if(a[k] < pivot){
-            std::swap(a[k],a[ptr]);
+            swap(a[k],a[ptr]);
             ptr++;
         }
     }
-    std::swap(a[j],a[ptr]);
+    swap(a[j],a[ptr]);
     quick_sort(a,i,ptr-1);
     quick_sort(a,ptr+1,j);
 }
